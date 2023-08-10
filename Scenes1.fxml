@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-image: aero.png;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Scene1Controller">
+   <children>
+      <RadioButton fx:id="myOne" layoutX="169.0" layoutY="92.0" mnemonicParsing="false" selected="true" style="-fx-background-insets: true;" text="One Way" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="myTrip" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="myRound" layoutX="264.0" layoutY="92.0" mnemonicParsing="false" text="Round Trip" textFill="WHITE" toggleGroup="$myTrip">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <Sphere cullFace="FRONT" drawMode="LINE" layoutX="1100.0" layoutY="65.0" radius="67.0" />
+      <Label alignment="CENTER" layoutX="329.0" layoutY="15.0" prefHeight="50.0" prefWidth="546.0" style="-fx-font-weight: BOld; -fx-background-color: white;" text="FLIGHTS" textFill="#149c96">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="goHome" layoutX="50.0" layoutY="88.0" mnemonicParsing="false" onAction="#goToHome" text="Go to Home" />
+      <AnchorPane fx:id="scenePane" layoutX="71.0" layoutY="141.0" prefHeight="410.0" prefWidth="1105.0" style="-fx-border-color: white;" />
+      <TextField fx:id="dispatchPlace" alignment="CENTER" layoutX="97.0" layoutY="177.0" onAction="#disPlace" prefHeight="154.0" prefWidth="199.0" promptText="FROM" style="-fx-background-color: #f48b98; -fx-border-color: green;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="destinationPlace" alignment="CENTER" layoutX="296.0" layoutY="177.0" onAction="#destPlace" prefHeight="154.0" prefWidth="193.0" promptText="TO" style="-fx-alignment: center; -fx-background-color: #f48b98; -fx-border-color: green;">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="swtichButton" alignment="CENTER" layoutX="261.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchWay" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #15e88c;" text="Switch" underline="true" />
+      <Button fx:id="myBookTickets" alignment="CENTER" cache="true" layoutX="523.0" layoutY="385.0" mnemonicParsing="false" onAction="#bookTickets" prefHeight="42.0" prefWidth="146.0" style="-fx-background-color: blue; -fx-font-weight: Bold;" text="Book Tickets" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="oneWayDate" layoutX="490.0" layoutY="177.0" onAction="#getOneWayDate" prefHeight="26.0" prefWidth="200.0" promptText="Select Dispatch Date" style="-fx-background-color: pink;" />
+      <Label fx:id="myDateLabel" alignment="CENTER" layoutX="490.0" layoutY="203.0" prefHeight="128.0" prefWidth="200.0" style="-fx-border-color: skyblue;" stylesheets="@application.css" text="Enter Dispatch Date" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="myDateLabel1" alignment="CENTER" layoutX="690.0" layoutY="203.0" prefHeight="128.0" prefWidth="200.0" style="-fx-border-color: skyblue;" stylesheets="@application.css" text="Enter Return Date" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="oneWayDate1" layoutX="690.0" layoutY="177.0" onAction="#getOneWayDate1" prefHeight="26.0" prefWidth="200.0" promptText="Select Return Date" style="-fx-background-color: pink;" />
+      <VBox fx:id="vBoxPane" layoutX="891.0" layoutY="176.0" prefHeight="154.0" prefWidth="270.0" style="-fx-background-color: white;">
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                  <Label alignment="CENTER" prefHeight="38.0" prefWidth="255.0" style="-fx-background-color: skyblue;" text="Traveller&amp;Class" textFill="#1f14ea">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </buttons>
+            </ButtonBar>
+            <ButtonBar layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                  <Button fx:id="adult" mnemonicParsing="false" text="Adults" />
+                  <Button fx:id="children" mnemonicParsing="false" text="Children" />
+                  <Button fx:id="infant" mnemonicParsing="false" text="Infants" />
+               </buttons>
+            </ButtonBar>
+            <RadioButton fx:id="economy" mnemonicParsing="false" onAction="#economy" prefHeight="28.0" prefWidth="269.0" text="Economy/Premium Economy">
+               <toggleGroup>
+                  <ToggleGroup fx:id="classGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="premiumEconomy" mnemonicParsing="false" onAction="#premiumEconomy" prefHeight="25.0" prefWidth="122.0" text="Premium Economy" toggleGroup="$classGroup" />
+            <RadioButton fx:id="bussiness" mnemonicParsing="false" onAction="#bussiness" prefHeight="30.0" prefWidth="72.0" text="Bussiness" toggleGroup="$classGroup" />
+         </children>
+      </VBox>
+      <SplitMenuButton fx:id="childrenSplitButton" layoutX="902.0" layoutY="385.0" minWidth="69.0" mnemonicParsing="false" prefHeight="26.0" text="Children">
+         <items>
+            <MenuItem mnemonicParsing="false" text="1" />
+            <MenuItem mnemonicParsing="false" text="2" />
+            <MenuItem mnemonicParsing="false" text="3" />
+            <MenuItem mnemonicParsing="false" text="4" />
+            <MenuItem mnemonicParsing="false" text="5" />
+            <MenuItem mnemonicParsing="false" text="6" />
+            <MenuItem mnemonicParsing="false" text="7" />
+            <MenuItem mnemonicParsing="false" text="8" />
+            <MenuItem mnemonicParsing="false" text="9" />
+            <MenuItem mnemonicParsing="false" text="10" />
+         </items>
+      </SplitMenuButton>
+      <SplitMenuButton fx:id="infantSplitButton" layoutX="901.0" layoutY="427.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Infants">
+         <items>
+            <MenuItem mnemonicParsing="false" text="1" />
+            <MenuItem mnemonicParsing="false" text="2" />
+            <MenuItem mnemonicParsing="false" text="3" />
+            <MenuItem mnemonicParsing="false" text="4" />
+            <MenuItem mnemonicParsing="false" text="5" />
+            <MenuItem mnemonicParsing="false" text="6" />
+            <MenuItem mnemonicParsing="false" text="7" />
+            <MenuItem mnemonicParsing="false" text="8" />
+            <MenuItem mnemonicParsing="false" text="9" />
+            <MenuItem mnemonicParsing="false" text="10" />
+         </items>
+      </SplitMenuButton>
+      <SplitMenuButton fx:id="adultSplitButton" layoutX="903.0" layoutY="342.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Adults">
+         <items>
+            <MenuItem mnemonicParsing="false" text="1" />
+            <MenuItem mnemonicParsing="false" text="2" />
+            <MenuItem mnemonicParsing="false" text="3" />
+            <MenuItem mnemonicParsing="false" text="4" />
+            <MenuItem mnemonicParsing="false" text="5" />
+            <MenuItem mnemonicParsing="false" text="6" />
+            <MenuItem mnemonicParsing="false" text="7" />
+            <MenuItem mnemonicParsing="false" text="8" />
+            <MenuItem mnemonicParsing="false" text="9" />
+         </items>
+      </SplitMenuButton>
+      <TextField fx:id="adultTextField" layoutX="994.0" layoutY="343.0" onAction="#adultNumber" promptText="Enter Number of Adults" />
+      <TextField fx:id="childrenTextField" layoutX="994.0" layoutY="385.0" onAction="#childrenNumber" promptText="Enter Number of Children" />
+      <TextField fx:id="infantTextField" layoutX="994.0" layoutY="427.0" onAction="#infantNumber" promptText="Enter number of Infants" />
+      <Label fx:id="travellerInfoLabel" alignment="CENTER" layoutX="898.0" layoutY="464.0" prefHeight="70.0" prefWidth="255.0" style="-fx-border-color: skyBlue; -fx-background-color: orange;" text="Travelers INFO" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+
+   </children>
+</AnchorPane>

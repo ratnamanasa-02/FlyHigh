@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.SeatsController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="509.0" style="-fx-background-color: #46B3F3;">
+            <children>
+                <AnchorPane layoutX="-1.0" prefHeight="197.0" prefWidth="263.0">
+                    <children>
+                        <ImageView fitHeight="281.0" fitWidth="307.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Flight.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <Label layoutX="87.0" layoutY="252.0" text="Mini" textFill="#38282d">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="55.0" layoutY="300.0" text="AirLines" textFill="#38282d">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="45.0" layoutY="438.0" text="We are always " textFill="#38282d">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="95.0" layoutY="468.0" text="at your service" textFill="#38282d">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="600.0" prefWidth="869.0" style="-fx-background-color: #ffe300;">
+            <children>
+                <Button fx:id="seatsBooking" layoutX="721.0" layoutY="537.0" mnemonicParsing="false" onAction="#seatsBooking" prefHeight="42.0" prefWidth="172.0" style="-fx-background-color: #46B3F3;" text="Book Seats">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="59.0" layoutY="42.0" style="-fx-background-color: #46B3F3;" text="SEAT BOOKING">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="one" layoutX="240.0" layoutY="130.0" mnemonicParsing="false" onAction="#click1" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #eb4e4e;" text="1">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="two" layoutX="300.0" layoutY="130.0" mnemonicParsing="false" onAction="#click2" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #eb4e4e;" text="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="three" layoutX="400.0" layoutY="130.0" mnemonicParsing="false" onAction="#click3" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #eb4e4e;" text="3">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="four" layoutX="460.0" layoutY="130.0" mnemonicParsing="false" onAction="#click4" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #eb4e4e;" text="4">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="five" layoutX="240.0" layoutY="170.0" mnemonicParsing="false" onAction="#click5" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #eb4e4e;" text="5">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="six" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#click6" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #eb4e4e;" text="6">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="seven" layoutX="400.0" layoutY="170.0" mnemonicParsing="false" onAction="#click7" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #eb4e4e;" text="7">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="eight" layoutX="460.0" layoutY="170.0" mnemonicParsing="false" onAction="#click8" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #eb4e4e;" text="8">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="nine" layoutX="240.0" layoutY="210.0" mnemonicParsing="false" onAction="#click9" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #eb4e4e;" text="9">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="ten" layoutX="300.0" layoutY="210.0" mnemonicParsing="false" onAction="#click10" style="-fx-background-color: #eb4e4e;" text="10">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="eleven" layoutX="400.0" layoutY="210.0" mnemonicParsing="false" onAction="#click11" style="-fx-background-color: #eb4e4e;" text="11">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twelve" layoutX="460.0" layoutY="210.0" mnemonicParsing="false" onAction="#click12" style="-fx-background-color: #eb4e4e;" text="12">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirteen" layoutX="240.0" layoutY="250.0" mnemonicParsing="false" onAction="#click13" style="-fx-background-color: #eb4e4e;" text="13">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="fourteen" layoutX="300.0" layoutY="250.0" mnemonicParsing="false" onAction="#click14" style="-fx-background-color: #eb4e4e;" text="14">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="fiveteen" layoutX="400.0" layoutY="250.0" mnemonicParsing="false" onAction="#click15" style="-fx-background-color: #eb4e4e;" text="15">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="sixteen" layoutX="460.0" layoutY="250.0" mnemonicParsing="false" onAction="#click16" style="-fx-background-color: #eb4e4e;" text="16">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="seventeen" layoutX="240.0" layoutY="290.0" mnemonicParsing="false" onAction="#click17" style="-fx-background-color: #eb4e4e;" text="17">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="eighteen" layoutX="300.0" layoutY="290.0" mnemonicParsing="false" onAction="#click18" style="-fx-background-color: #eb4e4e;" text="18">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="ninteen" layoutX="400.0" layoutY="290.0" mnemonicParsing="false" onAction="#click19" style="-fx-background-color: #eb4e4e;" text="19">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twenty" layoutX="460.0" layoutY="290.0" mnemonicParsing="false" onAction="#click20" style="-fx-background-color: #eb4e4e;" text="20">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twentyone" layoutX="240.0" layoutY="330.0" mnemonicParsing="false" onAction="#click21" style="-fx-background-color: #eb4e4e;" text="21">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twentytwo" layoutX="300.0" layoutY="330.0" mnemonicParsing="false" onAction="#click22" style="-fx-background-color: #eb4e4e;" text="22">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twentythree" layoutX="400.0" layoutY="330.0" mnemonicParsing="false" onAction="#click23" style="-fx-background-color: #eb4e4e;" text="23">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twentyfour" layoutX="460.0" layoutY="330.0" mnemonicParsing="false" onAction="#click24" style="-fx-background-color: #eb4e4e;" text="24">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twentyfive" layoutX="240.0" layoutY="370.0" mnemonicParsing="false" onAction="#click25" style="-fx-background-color: #eb4e4e;" text="25">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twentysix" layoutX="300.0" layoutY="370.0" mnemonicParsing="false" onAction="#click26" style="-fx-background-color: #eb4e4e;" text="26">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twentyseven" layoutX="400.0" layoutY="370.0" mnemonicParsing="false" onAction="#click27" style="-fx-background-color: #eb4e4e;" text="27">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twentyeight" layoutX="460.0" layoutY="370.0" mnemonicParsing="false" onAction="#click28" style="-fx-background-color: #eb4e4e;" text="28">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="twentynine" layoutX="240.0" layoutY="410.0" mnemonicParsing="false" onAction="#click29" style="-fx-background-color: #eb4e4e;" text="29">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirty" layoutX="300.0" layoutY="410.0" mnemonicParsing="false" onAction="#click30" style="-fx-background-color: #eb4e4e;" text="30">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirtyone" layoutX="400.0" layoutY="410.0" mnemonicParsing="false" onAction="#click31" style="-fx-background-color: #eb4e4e;" text="31">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirtytwo" layoutX="460.0" layoutY="410.0" mnemonicParsing="false" onAction="#click32" style="-fx-background-color: #eb4e4e;" text="32">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirtythree" layoutX="240.0" layoutY="450.0" mnemonicParsing="false" onAction="#click33" style="-fx-background-color: #eb4e4e;" text="33">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirtyfour" layoutX="300.0" layoutY="450.0" mnemonicParsing="false" onAction="#click34" style="-fx-background-color: #eb4e4e;" text="34">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirtyfive" layoutX="400.0" layoutY="450.0" mnemonicParsing="false" onAction="#click35" style="-fx-background-color: #eb4e4e;" text="35">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirtysix" layoutX="460.0" layoutY="450.0" mnemonicParsing="false" onAction="#click36" style="-fx-background-color: #eb4e4e;" text="36">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirtyseven" layoutX="240.0" layoutY="490.0" mnemonicParsing="false" onAction="#click37" style="-fx-background-color: #eb4e4e;" text="37">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirtyeight" layoutX="300.0" layoutY="490.0" mnemonicParsing="false" onAction="#click38" style="-fx-background-color: #eb4e4e;" text="38">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="thirtynine" layoutX="400.0" layoutY="490.0" mnemonicParsing="false" onAction="#click39" style="-fx-background-color: #eb4e4e;" text="39">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="fourty" layoutX="460.0" layoutY="490.0" mnemonicParsing="false" onAction="#click40" style="-fx-background-color: #eb4e4e;" text="40">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            </children></AnchorPane>
+    </children>
+</HBox>

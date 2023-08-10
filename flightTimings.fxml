@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.flightTimingsController">
+    <children>
+        <Button fx:id="b1" layoutX="97.0" layoutY="546.0" mnemonicParsing="false" onAction="#done" prefHeight="27.0" prefWidth="98.0" text="Done">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <AnchorPane fx:id="scenePane" layoutX="178.0" layoutY="76.0" prefHeight="448.0" prefWidth="847.0" style="-fx-border-color: white;">
+         <children>
+            <RadioButton fx:id="rb1" layoutX="126.0" layoutY="214.0" mnemonicParsing="false" onAction="#getTime" text="5:00 AM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="times" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rb2" layoutX="261.0" layoutY="214.0" mnemonicParsing="false" onAction="#getTime" text="11:30 AM" toggleGroup="$times">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb3" layoutX="402.0" layoutY="212.0" mnemonicParsing="false" onAction="#getTime" text="16:15 PM" toggleGroup="$times">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb4" layoutX="537.0" layoutY="212.0" mnemonicParsing="false" onAction="#getTime" text="20:00 PM" toggleGroup="$times">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb5" layoutX="663.0" layoutY="212.0" mnemonicParsing="false" onAction="#getTime" text="22:45 PM" toggleGroup="$times">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lb1" alignment="CENTER" layoutX="125.0" layoutY="92.0" prefHeight="18.0" prefWidth="951.0" text="CITIES - SOURCES AND DESTINATIONS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb3" alignment="CENTER" layoutX="126.0" layoutY="214.0" prefHeight="18.0" prefWidth="951.0" text="FLIGHT TIMINGS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb4" alignment="CENTER" layoutX="137.0" layoutY="359.0" prefHeight="18.0" prefWidth="958.0" text="DIFFERENT FLIGHTS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rb6" layoutX="418.0" layoutY="423.0" mnemonicParsing="false" onAction="#getWebsite" text="AIRINDIA">
+         <font>
+            <Font size="18.0" />
+         </font>
+          <toggleGroup>
+              <ToggleGroup fx:id="websites" />
+          </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rb7" layoutX="561.0" layoutY="420.0" mnemonicParsing="false" onAction="#getWebsite" text="MAKEMYTRIP" toggleGroup="$websites">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rb8" layoutX="729.0" layoutY="420.0" mnemonicParsing="false" onAction="#getWebsite" text="INDIGO" toggleGroup="$websites">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lb8" alignment="CENTER" layoutX="262.0" layoutY="149.0" prefHeight="50.0" prefWidth="231.0" style="-fx-border-color: white;" text="Source">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb7" alignment="CENTER" layoutX="658.0" layoutY="148.0" prefHeight="50.0" prefWidth="231.0" style="-fx-border-color: white;" text="Destination">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="goToHome" layoutX="1052.0" layoutY="546.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="27.0" prefWidth="98.0" text="Go to Home">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

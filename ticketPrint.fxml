@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.ticketPrintController">
+    <children>
+      <AnchorPane fx:id="scenePane" prefHeight="600.0" prefWidth="1200.0" stylesheets="@application.css">
+         <children>
+            <Label layoutX="545.0" layoutY="44.0" style="-fx-background-color: #46B3F3;" text="TICKET">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="scenePane" layoutX="297.0" layoutY="105.0" prefHeight="389.0" prefWidth="650.0" style="-fx-border-color: white;">
+               <children>
+                  <Label layoutX="14.0" layoutY="261.0" text="Traveller Class :">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="seat" layoutX="196.0" layoutY="301.0" prefHeight="27.0" prefWidth="398.0">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TravellerClass" layoutX="196.0" layoutY="261.0" prefHeight="27.0" prefWidth="398.0">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <Label layoutX="313.0" layoutY="134.0" text="Name : ">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="184.0" text="Total Number Of Travellers : ">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="234.0" prefHeight="27.0" prefWidth="209.0" text="Destination Place : ">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="284.0" prefHeight="27.0" prefWidth="177.0" text="Date Of Travel : ">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="328.0" text="Start Time : ">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="402.0" text="Seat Numbers : ">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="472.0" layoutY="444.0" text="Thank You For Booking.Happy Journey ...">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="402.0" layoutY="134.0">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="total" layoutX="627.0" layoutY="184.0">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="dplace" layoutX="527.0" layoutY="234.0">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="497.0" layoutY="284.0">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="stime" layoutX="452.0" layoutY="334.0">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="getTicket" layoutX="617.0" layoutY="527.0" mnemonicParsing="false" onAction="#getTicket" text="getTicket" />
+            <Button fx:id="goHome" layoutX="966.0" layoutY="505.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="42.0" prefWidth="131.0" style="-fx-background-color: #46B3F3;" text="Go to Home">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+    </children>
+</HBox>

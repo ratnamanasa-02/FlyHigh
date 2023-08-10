@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #deea00;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloPaymentController">
+   <children>
+      <Label layoutX="41.0" layoutY="106.0" prefHeight="56.0" prefWidth="108.0" text="Payment">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="181.0" prefHeight="47.0" prefWidth="307.0" text="Select Payment Method to pay">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="40.0" layoutY="258.0" mnemonicParsing="false" onAction="#switchToMain1" style="-fx-background-color: #00ACFC;" text="Credit or Debit Card">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="40.0" layoutY="326.0" mnemonicParsing="false" onAction="#switchToMain2" style="-fx-background-color: #00ACFC;" text="UPI">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="41.0" layoutY="387.0" mnemonicParsing="false" onAction="#switchToMain3" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: #00ACFC;" text="NetBanking">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f3f5" height="589.0" layoutX="708.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="487.0" />
+      <Label layoutX="722.0" layoutY="14.0" prefHeight="47.0" prefWidth="108.0" text="Summary">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="41.0" layoutY="451.0" mnemonicParsing="false" onAction="#switchToMain4" prefHeight="39.0" prefWidth="179.0" style="-fx-background-color: #00ACFC;" text="Wallet">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="41.0" layoutY="26.0" prefHeight="71.0" prefWidth="276.0" style="-fx-background-color: #00ACFC;" text="Mini Airlines" textFill="#080808">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="myImageView" fitHeight="269.0" fitWidth="276.0" layoutX="394.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Flight.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="718.0" layoutY="92.0" prefHeight="27.0" prefWidth="298.0" text="TOTAL NUMBER OF PERSONS">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+      <Label layoutX="722.0" layoutY="181.0" prefHeight="23.0" prefWidth="186.0" text="TAXES INCLUDED">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+      <Label layoutX="718.0" layoutY="138.0" text="TICKET PRICE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+      <Line endX="386.0" endY="-1.52587890625E-5" layoutX="809.0" layoutY="216.0" startX="-100.0" />
+      <Label fx:id="number" alignment="CENTER" layoutX="1026.0" layoutY="86.0" prefHeight="30.0" prefWidth="154.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" alignment="CENTER" layoutX="1029.0" layoutY="135.0" prefHeight="18.0" prefWidth="163.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="tax" alignment="CENTER" layoutX="1030.0" layoutY="178.0" prefHeight="30.0" prefWidth="163.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="722.0" layoutY="228.0" prefHeight="27.0" prefWidth="290.0" text="TOTAL AMOUNT">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" alignment="CENTER" layoutX="1034.0" layoutY="226.0" prefHeight="30.0" prefWidth="154.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

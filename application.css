@@ -1,0 +1,64 @@
+#mainScenePane{
+   -fx-background-image: url("aero.png");
+   -fx-background-size: cover;
+}
+#scenePane{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                               -fx-background-size: cover;
+}
+#loginAnchorPane{
+    -fx-background-image: url("rainbow2.png");
+       -fx-background-size: cover;
+}
+#signUpAnchorPane{
+    -fx-background-image: url("rainbow2.png");
+           -fx-background-size: cover;
+}
+#loggedAnchorPane{
+    -fx-background-image: url("orangebluegreen.png");
+               -fx-background-size: cover;
+}
+#dispatchPlace{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                   -fx-background-size: cover;
+}
+#destinationPlace{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                       -fx-background-size: cover;
+}
+#myDateLabel{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                           -fx-background-size: cover;
+}
+#myDateLabel1{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                               -fx-background-size: cover;
+}
+#vboxPane{
+    -fx-background-image: url("greenblackred.png");
+                                   -fx-background-size: cover;
+}
+#travellerInfoLabel{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                                       -fx-background-size: cover;
+}
+#vBoxPane{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                                           -fx-background-size: cover;
+}
+#lb8{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                                               -fx-background-size: cover;
+}
+#lb7{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                                               -fx-background-size: cover;
+}
+#Pane1{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                                                   -fx-background-size: cover;
+}
+#Pane2{
+    -fx-background-image: url("cyanpurpleyellow.png");
+                                                   -fx-background-size: cover;
+}
