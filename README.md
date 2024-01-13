@@ -1,5 +1,4 @@
 # FlyHigh
-Built an airline reservation system using Javafx, SQL database,Scene Builder and fxml
-Attached a login and signup page connecting to SQL database
-Introduced seat booking and payment section for the user to continue
-Also added cancellation of tickets and Booking Info.
+Built an airline reservation system using JavaFX, SQL database, Scene Builder, and FXML. 
+Integrated a login and signup page connected to the SQL database. 
+Introduced functionalities for seat booking and payment, along with features for ticket cancellation and access to booking information 
